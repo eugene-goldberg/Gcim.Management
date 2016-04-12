@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="@20c5dbed-a1bd-4ecf-8263-26365644d7a6" Caption="Data Management" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="ChangeRecord_ListView" ViewId="ChangeRecord_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="DataLoadMap_ListView" ViewId="DataLoadMap_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@b3b2b2c9-a8e5-4ada-9344-4cb9540b33d0" Caption="Common Management Objects" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@0e4e6296-3529-447a-95bd-4d220e9c93fb" ViewId="BusinessQuestion_ListView" IsNewNode="True" />
+          <Item Id="@1d25336c-01f3-418d-a424-25cba510b949" ViewId="DataDeliveryChannel_ListView" IsNewNode="True" />
+          <Item Id="@1dd0b0b1-18b3-40a5-ad12-e93c053376a2" ViewId="UdmMeasure_ListView" IsNewNode="True" />
+          <Item Id="@25ea2507-cf66-45d7-8ab9-bb32d1e3cf70" ViewId="SourceTool_ListView" IsNewNode="True" />
+          <Item Id="@2f7da682-908e-42ea-b236-c3de945d091c" ViewId="BusinessEntity_ListView" IsNewNode="True" />
+          <Item Id="@583210c3-0dd6-4b6a-bd7a-4733291c9e4d" ViewId="Governance_ListView" IsNewNode="True" />
+          <Item Id="@5aba4370-14ba-4544-a4ac-47488a79a2eb" ViewId="MasterData_ListView" IsNewNode="True" />
+          <Item Id="@65bab454-ee78-462f-8cc1-5df1be36a0a2" ViewId="InformationProduct_ListView" IsNewNode="True" />
+          <Item Id="@6cb062d5-ece3-4f7d-aa43-3d486de81266" ViewId="BusinessFunction_ListView" IsNewNode="True" />
+          <Item Id="@7129abb6-ba34-4f8a-aca5-a90cb70f00c7" ViewId="DataEntity_ListView" IsNewNode="True" />
+          <Item Id="@7644ffb5-a5b0-4ea4-927c-f7ad623617b8" ViewId="UdmFact_ListView" IsNewNode="True" />
+          <Item Id="@76e21bb9-3414-42d3-9ee4-02898c1e6e11" ViewId="BusinessInitiative_ListView" IsNewNode="True" />
+          <Item Id="@8ff4ce87-5718-419f-b1a9-8fdd63d7fcd4" ViewId="UdmDimension_ListView" IsNewNode="True" />
+          <Item Id="@aaed899a-f29b-4ce1-901b-ad9816ffdb0d" ViewId="DataSource_ListView" IsNewNode="True" />
+          <Item Id="@b3ca588e-fc07-4779-9f45-dcc51ef9d89b" ViewId="Udm_ListView" IsNewNode="True" />
+          <Item Id="@c93fa0d9-86a2-4385-b284-74eef6cf8859" ViewId="AnalyticalMethod_ListView" IsNewNode="True" />
+          <Item Id="@d0ff4338-4229-4d9f-8a85-09c414659e8f" ViewId="UdmDataAttribute_ListView" IsNewNode="True" />
+          <Item Id="@d299d593-d97f-476b-91da-7179206cf110" ViewId="BusinessGoal_ListView" IsNewNode="True" />
+          <Item Id="@d710661b-a7a8-41c4-b393-ffbc03f1d04c" ViewId="SubjectArea_ListView" IsNewNode="True" />
+          <Item Id="@d751897d-2968-4b93-bbf5-3b7745121b59" ViewId="PerformanceMetric_ListView" IsNewNode="True" />
+          <Item Id="@e163638b-c17b-41ef-8bd0-487d2567d379" ViewId="Employee_ListView" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@fa61c43b-f2d7-443f-8e75-5d6047625fc6" Caption="Administration" IsNewNode="True" />
+      <Item Id="Default">
+        <Items>
+          <Item Id="AnalyticalMethod_ListView" Removed="True" />
+          <Item Id="BiDimension_ListView" Removed="True" />
+          <Item Id="BiFact_ListView" Removed="True" />
+          <Item Id="BiMeasure_ListView" Removed="True" />
+          <Item Id="BusinessEntity_ListView" Removed="True" />
+          <Item Id="BusinessFunction_ListView" Removed="True" />
+          <Item Id="BusinessGoal_ListView" Removed="True" />
+          <Item Id="BusinessInitiative_ListView" Removed="True" />
+          <Item Id="BusinessQuestion_ListView" Removed="True" />
+          <Item Id="DataAttribute_ListView" Removed="True" />
+          <Item Id="DataDeliveryChannel_ListView" Removed="True" />
+          <Item Id="DataEntity_ListView" Removed="True" />
+          <Item Id="DataSource_ListView" Removed="True" />
+          <Item Id="Employee_ListView" Removed="True" />
+          <Item Id="Governance_ListView" Removed="True" />
+          <Item Id="InformationProduct_ListView" Removed="True" />
+          <Item Id="MasterData_ListView" Removed="True" />
+          <Item Id="PerformanceMetric_ListView" Removed="True" />
+          <Item Id="SourceTool_ListView" Removed="True" />
+          <Item Id="SubjectArea_ListView" Removed="True" />
+          <Item Id="Udm_ListView" Removed="True" />
+          <Item Id="UdmDataAttribute_ListView" Removed="True" />
+          <Item Id="UdmDimension_ListView" Removed="True" />
+          <Item Id="UdmFact_ListView" Removed="True" />
+          <Item Id="UdmMeasure_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options CollectionsEditMode="Edit" />
+  <SchemaModules>
+    <SchemaModule Name="SystemAspNetModule" Version="15.2.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="15.2.5.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>

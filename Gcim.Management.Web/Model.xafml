@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" Caption="Administration">
+        <Items>
+          <Item Id="AnalyticalMethod_ListView" Removed="True" />
+          <Item Id="BiDimension_ListView" Removed="True" />
+          <Item Id="BiFact_ListView" Removed="True" />
+          <Item Id="BiMeasure_ListView" Removed="True" />
+          <Item Id="BusinessEntity_ListView" Removed="True" />
+          <Item Id="BusinessFunction_ListView" Removed="True" />
+          <Item Id="BusinessGoal_ListView" Removed="True" />
+          <Item Id="BusinessInitiative_ListView" Removed="True" />
+          <Item Id="BusinessQuestion_ListView" Removed="True" />
+          <Item Id="ChangeRecord_ListView" Removed="True" />
+          <Item Id="DataAttribute_ListView" Removed="True" />
+          <Item Id="DataDeliveryChannel_ListView" Removed="True" />
+          <Item Id="DataEntity_ListView" Removed="True" />
+          <Item Id="DataLoadMap_ListView" Removed="True" />
+          <Item Id="DataSource_ListView" Removed="True" />
+          <Item Id="Employee_ListView" Removed="True" />
+          <Item Id="Governance_ListView" Removed="True" />
+          <Item Id="InformationProduct_ListView" Removed="True" />
+          <Item Id="MasterData_ListView" Removed="True" />
+          <Item Id="PerformanceMetric_ListView" Removed="True" />
+          <Item Id="SourceTool_ListView" Removed="True" />
+          <Item Id="SubjectArea_ListView" Removed="True" />
+          <Item Id="Udm_ListView" Removed="True" />
+          <Item Id="UdmDataAttribute_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SystemAspNetModule" Version="15.2.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="15.2.5.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="DataSource_ListView" AllowEdit="False" InlineEditMode="EditForm" />
+  </Views>
+</Application>

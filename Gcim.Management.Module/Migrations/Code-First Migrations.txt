@@ -1,0 +1,128 @@
+﻿PM> Get-Help enable-migrations
+
+NAME
+    Enable-Migrations
+    
+SYNOPSIS
+    Enables Code First Migrations in a project.
+    
+    
+SYNTAX
+    Enable-Migrations [-ContextTypeName <String>] [-EnableAutomaticMigrations] [-MigrationsDirectory <String>] [-ProjectName <String>] [-StartUpProjectName <String>] [-ContextProjectName 
+    <String>] [-ConnectionStringName <String>] [-Force] [-ContextAssemblyName <String>] [-AppDomainBaseDirectory <String>] [<CommonParameters>]
+    
+    Enable-Migrations [-ContextTypeName <String>] [-EnableAutomaticMigrations] [-MigrationsDirectory <String>] [-ProjectName <String>] [-StartUpProjectName <String>] [-ContextProjectName 
+    <String>] -ConnectionString <String> -ConnectionProviderName <String> [-Force] [-ContextAssemblyName <String>] [-AppDomainBaseDirectory <String>] [<CommonParameters>]
+    
+    
+DESCRIPTION
+    Enables Migrations by scaffolding a migrations configuration class in the project. If the
+    target database was created by an initializer, an initial migration will be created (unless
+    automatic migrations are enabled via the EnableAutomaticMigrations parameter).
+    
+
+RELATED LINKS
+
+REMARKS
+    To see the examples, type: "get-help Enable-Migrations -examples".
+    For more information, type: "get-help Enable-Migrations -detailed".
+    For technical information, type: "get-help Enable-Migrations -full".
+
+
+
+PM> enable-migrations -ProjectName "Gcim.Management.Module"
+Checking if the context targets an existing database...
+Detected database created with a database initializer. Scaffolded migration '201603281836556_InitialCreate' corresponding to existing database. To use an automatic migration instead, delete the Migrations folder and re-run Enable-Migrations specifying the -EnableAutomaticMigrations parameter.
+Code First Migrations enabled for project Gcim.Management.Module.
+PM> update-database -ProjectName "Gcim.Management.Module"
+Specify the '-Verbose' flag to view the SQL statements being applied to the target database.
+More than one migrations configuration type was found in the assembly 'Gcim.Management.Module'. Specify the name of the one to use.
+PM> update-database -ProjectName "Gcim.Management.Module"
+Specify the '-Verbose' flag to view the SQL statements being applied to the target database.
+No pending explicit migrations.
+Running Seed method.
+PM> Get-Help add-migration
+
+NAME
+    Add-Migration
+    
+SYNOPSIS
+    Scaffolds a migration script for any pending model changes.
+    
+    
+SYNTAX
+    Add-Migration [-Name] <String> [-Force] [-ProjectName <String>] [-StartUpProjectName <String>] [-ConfigurationTypeName <String>] [-ConnectionStringName <String>] [-IgnoreChanges] 
+    [-AppDomainBaseDirectory <String>] [<CommonParameters>]
+    
+    Add-Migration [-Name] <String> [-Force] [-ProjectName <String>] [-StartUpProjectName <String>] [-ConfigurationTypeName <String>] -ConnectionString <String> -ConnectionProviderName <String> 
+    [-IgnoreChanges] [-AppDomainBaseDirectory <String>] [<CommonParameters>]
+    
+    
+DESCRIPTION
+    Scaffolds a new migration script and adds it to the project.
+    
+
+RELATED LINKS
+
+REMARKS
+    To see the examples, type: "get-help Add-Migration -examples".
+    For more information, type: "get-help Add-Migration -detailed".
+    For technical information, type: "get-help Add-Migration -full".
+
+
+
+PM> update-database -ProjectName "Gcim.Management.Module"
+Specify the '-Verbose' flag to view the SQL statements being applied to the target database.
+No pending explicit migrations.
+Unable to update database to match the current model because there are pending changes and automatic migration is disabled. Either write the pending model changes to a code-based migration or enable automatic migration. Set DbMigrationsConfiguration.AutomaticMigrationsEnabled to true to enable automatic migration.
+You can use the Add-Migration command to write the pending model changes to a code-based migration.
+PM> Add-Migration -ProjectName "Gcim.Management.Module"
+cmdlet Add-Migration at command pipeline position 1
+Supply values for the following parameters:
+Name: AddedDummyField
+Scaffolding migration 'AddedDummyField'.
+The Designer Code for this migration file includes a snapshot of your current Code First model. This snapshot is used to calculate the changes to your model when you scaffold the next migration. If you make additional changes to your model that you want to include in this migration, then you can re-scaffold it by running 'Add-Migration AddedDummyField' again.
+PM> update-database -ProjectName "Gcim.Management.Module"
+Specify the '-Verbose' flag to view the SQL statements being applied to the target database.
+Applying explicit migrations: [201603282042069_AddedDummyField].
+Applying explicit migration: 201603282042069_AddedDummyField.
+Running Seed method.
+PM> Get-Help add-migration
+
+NAME
+    Add-Migration
+    
+SYNOPSIS
+    Scaffolds a migration script for any pending model changes.
+    
+    
+SYNTAX
+    Add-Migration [-Name] <String> [-Force] [-ProjectName <String>] [-StartUpProjectName <String>] [-ConfigurationTypeName <String>] [-ConnectionStringName <String>] [-IgnoreChanges] 
+    [-AppDomainBaseDirectory <String>] [<CommonParameters>]
+    
+    Add-Migration [-Name] <String> [-Force] [-ProjectName <String>] [-StartUpProjectName <String>] [-ConfigurationTypeName <String>] -ConnectionString <String> -ConnectionProviderName <String> 
+    [-IgnoreChanges] [-AppDomainBaseDirectory <String>] [<CommonParameters>]
+    
+    
+DESCRIPTION
+    Scaffolds a new migration script and adds it to the project.
+    
+
+RELATED LINKS
+
+REMARKS
+    To see the examples, type: "get-help Add-Migration -examples".
+    For more information, type: "get-help Add-Migration -detailed".
+    For technical information, type: "get-help Add-Migration -full".
+
+
+
+PM> Add-Migration -Name "RemoveDummyField" -ProjectName "Gcim.Management.Module"
+Scaffolding migration 'RemoveDummyField'.
+The Designer Code for this migration file includes a snapshot of your current Code First model. This snapshot is used to calculate the changes to your model when you scaffold the next migration. If you make additional changes to your model that you want to include in this migration, then you can re-scaffold it by running 'Add-Migration RemoveDummyField' again.
+PM> update-database -ProjectName "Gcim.Management.Module"
+Specify the '-Verbose' flag to view the SQL statements being applied to the target database.
+Applying explicit migrations: [201603282044209_RemoveDummyField].
+Applying explicit migration: 201603282044209_RemoveDummyField.
+Running Seed method.
+PM> 
