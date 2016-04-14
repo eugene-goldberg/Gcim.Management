@@ -155,6 +155,10 @@
     <Compile Include="Migrations\201604121912488_migration 4.Designer.cs">
       <DependentUpon>201604121912488_migration 4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604122019270_migration 5.cs" />
+    <Compile Include="Migrations\201604122019270_migration 5.Designer.cs">
+      <DependentUpon>201604122019270_migration 5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
@@ -176,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604121912488_migration 4.resx">
       <DependentUpon>201604121912488_migration 4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604122019270_migration 5.resx">
+      <DependentUpon>201604122019270_migration 5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
     <EmbeddedResource Include="Module.resx">

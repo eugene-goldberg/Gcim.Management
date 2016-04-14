@@ -31,6 +31,9 @@ namespace Gcim.Management.Module.BusinessObjects
             this.AssociatedSourceTools = new List<SourceTool>();
             this.AssociatedPerformanceMetrics = new List<PerformanceMetric>();
             this.AssociatedUdm = new List<Udm>();
+            this.AssociatedUdmMeasures = new List<UdmMeasure>();
+            this.AssociatedUdmFacts = new List<UdmFact>();
+            this.AssociatedUdmDimensions = new List<UdmDimension>();
         }
         [Browsable(false)]  // Hide the entity identifier from UI.
         public Int32 ID { get; protected set; }
@@ -89,5 +92,8 @@ namespace Gcim.Management.Module.BusinessObjects
         public virtual IList<SourceTool> AssociatedSourceTools { get; set; }
         public virtual IList<PerformanceMetric> AssociatedPerformanceMetrics { get; set; }
         public virtual IList<Udm> AssociatedUdm { get; set; }
+        public virtual IList<UdmFact> AssociatedUdmFacts { get; set; }
+        public virtual IList<UdmMeasure> AssociatedUdmMeasures { get; set; }
+        public virtual IList<UdmDimension> AssociatedUdmDimensions { get; set; }
     }
 }

@@ -245,6 +245,7 @@
     <Content Include="Model.Tablet.xafml" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\gcim-publish.pubxml" />
+    <None Include="Properties\PublishProfiles\GCIM.pubxml" />
     <None Include="ReadMe.txt" />
     <Content Include="Web.config" />
     <None Include="Web.Debug.config">
