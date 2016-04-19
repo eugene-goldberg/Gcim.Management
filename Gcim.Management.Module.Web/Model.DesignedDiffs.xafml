@@ -31,6 +31,7 @@
           <Item Id="@8ff4ce87-5718-419f-b1a9-8fdd63d7fcd4" ViewId="UdmDimension_ListView" Index="18" IsNewNode="True" />
           <Item Id="@7644ffb5-a5b0-4ea4-927c-f7ad623617b8" ViewId="UdmFact_ListView" Index="19" IsNewNode="True" />
           <Item Id="@1dd0b0b1-18b3-40a5-ad12-e93c053376a2" ViewId="UdmMeasure_ListView" Index="20" IsNewNode="True" />
+          <Item Id="OdsDataAttribute_ListView" ViewId="OdsDataAttribute_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
       <Item Id="@fa61c43b-f2d7-443f-8e75-5d6047625fc6" Caption="Administration" IsNewNode="True" />
@@ -49,6 +50,7 @@
           <Item Id="Governance_ListView" Removed="True" />
           <Item Id="InformationProduct_ListView" Removed="True" />
           <Item Id="MasterData_ListView" Removed="True" />
+          <Item Id="OdsDataAttribute_ListView" Removed="True" />
           <Item Id="PerformanceMetric_ListView" Removed="True" />
           <Item Id="SourceTool_ListView" Removed="True" />
           <Item Id="SubjectArea_ListView" Removed="True" />

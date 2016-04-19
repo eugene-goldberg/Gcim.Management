@@ -44,6 +44,7 @@ namespace  Gcim.Management.Module.BusinessObjects {
         public DbSet<PerformanceMetric> PerformanceMetrics { get; set; }
         public DbSet<BusinessEntity> BusinessEntities { get; set; }
         public DbSet<ChangeRecord> ChangeRecords { get; set; }
+        public DbSet<OdsDataAttribute> OdsDataAttributes { get; set; }
         public DbSet<UdmDataAttribute> UdmDataAttributes { get; set; }
         public DbSet<UdmDimension> UdmDimensions { get; set; }
         public DbSet<UdmFact> UdmFacts { get; set; }

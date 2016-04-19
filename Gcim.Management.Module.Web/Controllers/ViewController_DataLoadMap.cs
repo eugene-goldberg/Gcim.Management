@@ -164,6 +164,11 @@ namespace Gcim.Management.Module.Web.Controllers
                         targetBoType = XafTypesInfo.Instance.FindTypeInfo(targetObject.GetType());
                         break;
 
+                    case "OdsDataAttribute":
+                        targetObject = ObjectSpace.CreateObject<OdsDataAttribute>();
+                        targetBoType = XafTypesInfo.Instance.FindTypeInfo(targetObject.GetType());
+                        break;
+
                     case "SourceTool":
                         targetObject = ObjectSpace.CreateObject<SourceTool>();
                         targetBoType = XafTypesInfo.Instance.FindTypeInfo(targetObject.GetType());
