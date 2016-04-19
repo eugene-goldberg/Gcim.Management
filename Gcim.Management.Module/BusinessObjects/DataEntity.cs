@@ -26,6 +26,7 @@ namespace Gcim.Management.Module.BusinessObjects
 
             this.AssociatedBusinessEntities = new List<BusinessEntity>();
             this.AssociatedUdmDataAttributes = new List<UdmDataAttribute>();
+            this.AssociatedOdsDataAttributes = new List<OdsDataAttribute>();
             this.AssociatedDataSources = new List<DataSource>();
             this.AssociatedMasterData = new List<MasterData>();
             this.AssociatedSourceTools = new List<SourceTool>();
@@ -87,6 +88,7 @@ namespace Gcim.Management.Module.BusinessObjects
         public virtual IList<DataDeliveryChannel> AssociatedDataDeliveryChannels { get; set; }
         public virtual IList<BusinessEntity> AssociatedBusinessEntities { get; set; }
         public virtual IList<UdmDataAttribute> AssociatedUdmDataAttributes { get; set; }
+        public virtual IList<OdsDataAttribute> AssociatedOdsDataAttributes { get; set; }
         public virtual IList<DataSource> AssociatedDataSources { get; set; }
         public virtual IList<MasterData> AssociatedMasterData { get; set; }
         public virtual IList<SourceTool> AssociatedSourceTools { get; set; }
